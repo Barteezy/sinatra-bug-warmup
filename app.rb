@@ -22,6 +22,8 @@ class App < Sinatra::Base
   post "/registrations" do
     if params[:name_is_hunter] == nil
       hunter = "f"
+    else
+      hunter = params[:name_is_hunter]
     end
 
 
